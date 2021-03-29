@@ -41,9 +41,7 @@ public class SampleCodeDetector extends Detector implements Detector.UastScanner
             Category.CORRECTNESS,
             6,
             Severity.WARNING,
-            new Implementation(
-                    SampleCodeDetector.class,
-                    Scope.JAVA_FILE_SCOPE));
+            new Implementation(SampleCodeDetector.class, Scope.JAVA_FILE_SCOPE));
 
     @Override
     public List<Class<? extends UElement>> getApplicableUastTypes() {

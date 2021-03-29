@@ -8,6 +8,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
+    // 文章来自下面的链接
+//    https://blog.csdn.net/singwhatiwanna/article/details/95559571
+
     private static final String TAG = "MainActivity";
     private ImageView mIv;
 
@@ -20,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+
+    /*** 下面这些如果不加自定义的lint库，那么即使在gradle中输入lint ，得出的报告也只是android lint 自带的  **/
     /**
      * 注意：
      * LagDetector
@@ -32,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         //Android 自带的 ToastDetector
         Toast.makeText(this, "", Toast.LENGTH_SHORT);
 
+
+        // 以下都是自定义的lint 。
         //SampleCodeDetector
         System.out.println("Omooo");
 

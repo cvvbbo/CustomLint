@@ -17,6 +17,13 @@ android {
         }
     }
 
+    // 如何加上了这个，那么检测的那些lint规则就会被忽略
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+
 }
 
 dependencies {
@@ -27,7 +34,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    lintChecks project(":lint_library")
+//    lintChecks project(":lint_library")
 }
 
 /**
